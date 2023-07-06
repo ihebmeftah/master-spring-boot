@@ -6,9 +6,12 @@ public class Cours {
     private String author;
  
     public Cours(long id, String name, String author) {
+        super();
         this.id = id;
         this.name = name;
         this.author = author;
+    }
+     public Cours() {
     }
     public long getId() {
         return id;

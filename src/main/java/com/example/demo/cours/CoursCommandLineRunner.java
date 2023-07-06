@@ -13,13 +13,12 @@ public class CoursCommandLineRunner implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        coursJdbcRepo.insert(new Cours(1 ,"sajed","meftah"));
-        coursJdbcRepo.insert(new Cours(2 ,"sajed","meftah"));
-        coursJdbcRepo.insert(new Cours(3 ,"sajed","meftah"));
-        coursJdbcRepo.insert(new Cours(4 ,"sajed","meftah"));
+        coursJdbcRepo.insert(new Cours(1, "sajed 1", "meftah"));
+        coursJdbcRepo.insert(new Cours(2, "sajed 2", "meftah"));
+        coursJdbcRepo.insert(new Cours(3, "sajed 3", "meftah"));
+        coursJdbcRepo.insert(new Cours(4, "sajed 3", "meftah"));
 
-                coursJdbcRepo.deleteById(2);
-
+        System.out.println(coursJdbcRepo.findById(3));
 
     }
 
