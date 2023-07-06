@@ -1,6 +1,11 @@
 package com.example.demo.cours;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity //mapping between table and beans
 public class Cours {
+    @Id
     private long id;
     private String name;
     private String author;
