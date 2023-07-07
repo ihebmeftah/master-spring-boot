@@ -66,15 +66,16 @@ button:hover {
 <body>
   <div class="container">
     <h2>Login</h2>
-    <form>
+    <form method="post">
       <div class="input-group">
         <label for="username">Username</label>
-        <input type="text" id="username" placeholder="Enter your username" value="${name}">
+        <input type="text" id="username" name="name" placeholder="Enter your username" value="${name}">
       </div>
       <div class="input-group">
         <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Enter your password" value="${name}">
+        <input type="password" id="password" name="password" placeholder="Enter your password" value="${name}">
       </div>
+      <pre>${error}</pre>
       <button type="submit">Login</button>
     </form>
   </div>
