@@ -69,11 +69,11 @@ button:hover {
     <form>
       <div class="input-group">
         <label for="username">Username</label>
-        <input type="text" id="username" placeholder="Enter your username">
+        <input type="text" id="username" placeholder="Enter your username" value="${name}">
       </div>
       <div class="input-group">
         <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Enter your password">
+        <input type="password" id="password" placeholder="Enter your password" value="${name}">
       </div>
       <button type="submit">Login</button>
     </form>
