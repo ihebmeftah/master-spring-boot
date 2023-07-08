@@ -8,6 +8,7 @@
 <body>
     <center>
         <h1>Weclome home page ${name} ${password}</h1>
+        <h1><a href="alltodo">manage</a> Todos</h1>
     </center>
     
 </body>
