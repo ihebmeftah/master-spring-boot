@@ -23,7 +23,10 @@ public class UserController {
     // GET /users
     @GetMapping("/users/{id}")
     public User retrieveUser(@PathVariable int id) {
-        return userRepo.findById(id);
+        User user=userRepo.findById(id);
+        if (user == null)
+            throw  new UserNotFoundException("user with Id = " + id + " not exist");
+        return user;
     }
 
     @DeleteMapping("/users/{id}")

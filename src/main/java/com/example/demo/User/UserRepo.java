@@ -20,7 +20,7 @@ public class UserRepo {
         return users;
     }
     public User findById(Integer id){
-        return users.stream().filter(user ->user.getId().equals(id)).findFirst().get();
+        return users.stream().filter(user ->user.getId().equals(id)).findFirst().orElse(null);
     }
     public User save(User user){
         user.setId(++countId);
